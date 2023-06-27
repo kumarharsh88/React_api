@@ -1,0 +1,40 @@
+.Banners{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    background-color: white;
+    width: 95vw;
+    margin: auto;
+    overflow-y: none;
+}
+.BannerDiv{
+    /* width: 40%; */
+    margin-top: 2%;
+    margin-right: 15px;
+    flex-shrink: 0;
+    margin-left: 15px;
+    height: auto;
+    margin-right: 15px;
+    border-radius: 20px;
+}
+.BannerImg{
+    width: 100%;
+    height: 230px;
+}
+
+.Banners::-webkit-scrollbar{
+    height: 0;
+    background:transparent;
+}
+.Banners::-webkit-scrollbar-track{
+    background-color: #f1f1f1;
+}
+.Banners::-webkit-scrollbar-thumb{
+    background: #888;
+}
+@media only screen and (max-width:500px) {
+    .BannerDiv{
+        width: 100%;
+    }
+}
